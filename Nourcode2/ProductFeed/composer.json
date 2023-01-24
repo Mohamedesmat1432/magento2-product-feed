@@ -1,0 +1,25 @@
+{
+  "name": "nourcode2/module-product-feed",
+  "description": "Product Feed module for Magento 2 by Nourcode2",
+  "require": {
+    "nourcode2/core": "*"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Mohamedesmat1432",
+          "email": "mohamedesmat1432@gmail.com"
+      }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Nourcode2\\ProductFeed\\": ""
+    }
+  },
+  "minimum-stability": "stable"
+}

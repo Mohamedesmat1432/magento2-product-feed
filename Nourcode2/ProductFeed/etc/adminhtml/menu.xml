@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © 2019 Nourcode2. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * Nourcode2_ProductFeed extension
+ * NOTICE OF LICENSE
+ *
+ * @category Nourcode2
+ * @package Nourcode2_ProductFeed
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Nourcode2_ProductFeed::feed"
+             title="Product Feed"
+             translate="title"
+             module="Nourcode2_ProductFeed"
+             sortOrder="20"
+             resource="Nourcode2_ProductFeed::feed"
+             parent="Magento_Backend::marketing"
+        />
+        <add id="Nourcode2_ProductFeed::product"
+             title="Manage Feed"
+             translate="title"
+             module="Nourcode2_ProductFeed"
+             sortOrder="10"
+             parent="Nourcode2_ProductFeed::feed"
+             action="feed/index/index"
+             resource="Nourcode2_ProductFeed::product"
+        />
+        <add id="Nourcode2_ProductFeed::configuration"
+             title="Configuration"
+             translate="title"
+             module="Nourcode2_ProductFeed"
+             sortOrder="10"
+             parent="Nourcode2_ProductFeed::feed"
+             action="adminhtml/system_config/edit/section/sendmail"
+             resource="Nourcode2_ProductFeed::configuration"/>
+    </menu>
+</config>
